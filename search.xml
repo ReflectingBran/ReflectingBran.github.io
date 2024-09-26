@@ -11,6 +11,20 @@
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 拓展技能 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据结构 </tag>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -21,9 +35,21 @@
       <link href="/2024/09/26/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8BLLMBook/"/>
       <url>/2024/09/26/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8BLLMBook/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="大语言模型LLMBook"><a href="#大语言模型LLMBook" class="headerlink" title="大语言模型LLMBook"></a><center>大语言模型LLMBook</center></h1><h2 id="第一章：引言"><a href="#第一章：引言" class="headerlink" title="第一章：引言"></a>第一章：引言</h2><h3 id="1-1-语言模型的发展历程"><a href="#1-1-语言模型的发展历程" class="headerlink" title="1.1 语言模型的发展历程"></a>1.1 语言模型的发展历程</h3><p>&emsp;&emsp; 语言模型旨在对于人类语言的内在规律进行建模，从而准确预测<br>词序列中未来（或缺失）词或词元（Token）的概率</p><p>&emsp;&emsp; 根据所采用技术方法的不同，针对语言模型的研究工作可以分为以下四个主要发展阶段：</p><ul><li>统计语言模型</li><li>神经语言模型</li><li>预训练语言模型</li><li>大语言模型</li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> 读书笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 大模型 </tag>
+            
+        </tags>
       
     </entry>
     
