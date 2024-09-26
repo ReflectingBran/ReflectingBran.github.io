@@ -4,11 +4,37 @@
   
     
     <entry>
+      <title>数据结构与算法</title>
+      <link href="/2024/09/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+      <url>/2024/09/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>大语言模型LLMBook</title>
+      <link href="/2024/09/26/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8BLLMBook/"/>
+      <url>/2024/09/26/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8BLLMBook/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>依赖冲突解决方案的构建</title>
       <link href="/2024/09/26/%E4%BE%9D%E8%B5%96%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E7%9A%84%E6%9E%84%E5%BB%BA/"/>
       <url>/2024/09/26/%E4%BE%9D%E8%B5%96%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E7%9A%84%E6%9E%84%E5%BB%BA/</url>
       
-        <content type="html"><![CDATA[<h1 id="依赖冲突解决方案体系构建"><a href="#依赖冲突解决方案体系构建" class="headerlink" title="依赖冲突解决方案体系构建"></a><center>依赖冲突解决方案体系构建</center></h1><h2 id="一、依赖冲突数据信息来源及收集方案"><a href="#一、依赖冲突数据信息来源及收集方案" class="headerlink" title="一、依赖冲突数据信息来源及收集方案"></a>一、依赖冲突数据信息来源及收集方案</h2><h3 id="1-1-依赖冲突数据信息来源"><a href="#1-1-依赖冲突数据信息来源" class="headerlink" title="1.1 依赖冲突数据信息来源"></a>1.1 依赖冲突数据信息来源</h3><h3 id="1-2-依赖冲突数据收集方案"><a href="#1-2-依赖冲突数据收集方案" class="headerlink" title="1.2 依赖冲突数据收集方案"></a>1.2 依赖冲突数据收集方案</h3><h4 id="1-2-1-人工收集方案"><a href="#1-2-1-人工收集方案" class="headerlink" title="1.2.1 人工收集方案"></a>1.2.1 人工收集方案</h4><h4 id="1-2-2-自动化收集方案"><a href="#1-2-2-自动化收集方案" class="headerlink" title="1.2.2 自动化收集方案"></a>1.2.2 自动化收集方案</h4>]]></content>
+        <content type="html"><![CDATA[<h1 id="依赖冲突解决方案体系构建"><a href="#依赖冲突解决方案体系构建" class="headerlink" title="依赖冲突解决方案体系构建"></a><center>依赖冲突解决方案体系构建</center></h1><h2 id="一、依赖冲突数据信息来源及收集方案"><a href="#一、依赖冲突数据信息来源及收集方案" class="headerlink" title="一、依赖冲突数据信息来源及收集方案"></a>一、依赖冲突数据信息来源及收集方案</h2><p>&emsp;&emsp;依赖冲突是软件开发中常见的一种问题，尤其是在使用包管理工具和库时。它指的是在同一个项目中，不同的库或模块之间由于对共享依赖的版本要求不一致，导致无法正常工作或引发错误的情况。</p><p>&emsp;&emsp;依赖冲突的常见原因：</p><ul><li>版本不兼容：不同库对同一个依赖的要求版本不同</li><li>转移依赖：某个库依赖的其他库的版本与主项目不兼容</li><li>更新问题：更新某个库后，可能会导致引入的新版本与其他库不兼容</li></ul><h3 id="1-1-依赖冲突数据信息来源"><a href="#1-1-依赖冲突数据信息来源" class="headerlink" title="1.1 依赖冲突数据信息来源"></a>1.1 依赖冲突数据信息来源</h3><p>&emsp;&emsp;包含依赖冲突信息的网站可能是一些开发者社区或者漏洞披露网站，例如GitHub、StackOverflow等。</p><p>&emsp;&emsp;在这些网站中，数据量数以百万计。即使采用关键词过滤的策略，包含关键词“依赖冲突”、“dependency conflict”的信息量仍十分复杂，且数据质量参差不齐，因此需要对这些数据采取更复杂的收集、过滤、筛选策略。</p><h3 id="1-2-依赖冲突数据收集方案"><a href="#1-2-依赖冲突数据收集方案" class="headerlink" title="1.2 依赖冲突数据收集方案"></a>1.2 依赖冲突数据收集方案</h3><h4 id="1-2-1-人工收集方案"><a href="#1-2-1-人工收集方案" class="headerlink" title="1.2.1 人工收集方案"></a>1.2.1 人工收集方案</h4><h4 id="1-2-2-自动化收集方案"><a href="#1-2-2-自动化收集方案" class="headerlink" title="1.2.2 自动化收集方案"></a>1.2.2 自动化收集方案</h4><p>&emsp;&emsp;Web Scraper自动化爬虫工具</p>]]></content>
       
       
       <categories>
@@ -59,7 +85,7 @@
       
       <categories>
           
-          <category> 经典书籍 </category>
+          <category> 读书笔记 </category>
           
       </categories>
       
@@ -106,7 +132,7 @@
       <link href="/2024/09/26/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%AB%E8%82%A1%E6%96%87/"/>
       <url>/2024/09/26/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%85%AB%E8%82%A1%E6%96%87/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="大模型八股文"><a href="#大模型八股文" class="headerlink" title="大模型八股文"></a><center>大模型八股文</center></h1><h2 id="一、基础"><a href="#一、基础" class="headerlink" title="一、基础"></a>一、基础</h2><ol><li>目前主流的开源模型体系有哪些</li></ol><ul><li></li></ul><h2 id="二、进阶"><a href="#二、进阶" class="headerlink" title="二、进阶"></a>二、进阶</h2>]]></content>
       
       
       <categories>
