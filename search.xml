@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Redis数据库周</title>
+      <link href="/2025/02/17/Redis%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%A8/"/>
+      <url>/2025/02/17/Redis%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%A8/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SpringBoot周</title>
       <link href="/2025/02/17/SpringBoot%E5%91%A8/"/>
       <url>/2025/02/17/SpringBoot%E5%91%A8/</url>
@@ -21,9 +34,23 @@
       <link href="/2025/02/17/%E5%9B%9E%E6%BA%AF%E5%91%A8/"/>
       <url>/2025/02/17/%E5%9B%9E%E6%BA%AF%E5%91%A8/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="回溯周计划"><a href="#回溯周计划" class="headerlink" title="回溯周计划"></a><strong>回溯周计划</strong></h1><p><strong>2025.2.17日~2025.2.23日</strong></p><h1 id="回溯周第一天"><a href="#回溯周第一天" class="headerlink" title="回溯周第一天"></a><strong>回溯周第一天</strong></h1><h2 id="回溯法基本知识"><a href="#回溯法基本知识" class="headerlink" title="回溯法基本知识"></a><strong>回溯法基本知识</strong></h2><p><strong>口诀</strong>：终止条件，循环递归<br>回溯算法与递归是相辅相成的，它与常说的 DFS 算法可以基本认为是同一种算法（虽然它们之间有细微的差异）。<br>抽象地说，解决一个回溯问题，实际上就是遍历一棵决策树的过程，树的每个叶子节点存放着一个合法答案，把整棵树都遍历一遍，并同时将叶子节点上的答案保存下来，就能得到所有的合法答案。<br>想象自己站在一棵回溯树的节点上，你必须思考三个问题：</p><ul><li>当前路径：即已经做出的选择</li><li>选择列表：即当前可以做的选择</li><li>结束条件：即何时无法再做选择（到达决策树底层）</li></ul><p><strong>回溯算法的代码框架</strong>：</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">backtrack</span><span class="params">(路径 , 选择列表)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (终止条件)&#123;</span><br><span class="line">        存放结果;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(选择 : 本层集合中元素)&#123;</span><br><span class="line">        做选择;</span><br><span class="line">        backtrack(路径 , 新选择列表);</span><br><span class="line">        撤销当前选择;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>注意：回溯算法需要的参数并不容易预先确定下来，一般是先写算法逻辑，然后需要什么参数，就填什么参数。</p></blockquote><p>回溯算法能够解决的问题：</p><ul><li>组合问题：N 个数中按一定规则找出 K 个数的集合</li><li>切割问题：一个字符串按一定规则有几种切割方式</li><li>子集问题：一个 N 个数的集合里有多少符合条件的子集</li><li>排列问题：N 个数按一定规则全排列，有几种排列方式</li><li>棋盘问题：N 皇后，解数独等等</li></ul><p>回溯算法本质上是一种深度优先搜索算法，它尝试所有可能的解决方案直到找到满足条件的解。这种方法的优点在于能够找到所有可能的解决方案，而且在合理的剪枝操作下，具有很高的效率。然而在处理大规模或者复杂问题时，回溯算法的运行效率可能难以接受。</p><blockquote><p>时间上，回溯算法通常需要遍历状态空间的所有可能，时间复杂度可以达到指数阶或阶乘阶；空间上，在递归调用中需要保存当前的状态，当深度很大时，空间需求会很大。</p></blockquote><p>即便如此，回溯算法仍然是某些搜索问题和约束满足问题的最佳解决方案。对于这些问题，由于无法预测哪些选择可生成有效的解，因此我们必须对所有可能的选择进行遍历。</p><h2 id="回溯法练习经典必刷题目"><a href="#回溯法练习经典必刷题目" class="headerlink" title="回溯法练习经典必刷题目"></a><strong>回溯法练习经典必刷题目</strong></h2><h3 id="初级-简单"><a href="#初级-简单" class="headerlink" title="初级&#x2F;简单"></a><strong>初级&#x2F;简单</strong></h3><ul><li><strong>二叉树的所有路径</strong> <a href="https://leetcode.cn/problems/binary-tree-paths/description/">力扣题目链接</a></li><li><strong>二进制手表</strong> <a href="https://leetcode.cn/problems/binary-watch/description/">力扣题目链接</a></li><li><strong>找出所有子集的异或总和再求和</strong> <a href="https://leetcode.cn/problems/sum-of-all-subset-xor-totals/description/">力扣题目链接</a></li><li><strong>烹饪料理</strong> <a href="https://leetcode.cn/problems/UEcfPD/description/">力扣题目链接</a></li></ul><h3 id="中级-中等"><a href="#中级-中等" class="headerlink" title="中级&#x2F;中等"></a><strong>中级&#x2F;中等</strong></h3><ul><li><strong>全排列</strong> <a href="https://leetcode.cn/problems/permutations/description/">力扣题目链接</a></li><li><strong>组合总和Ⅲ</strong> <a href="https://leetcode.cn/problems/combination-sum-iii/description/">力扣题目链接</a></li><li><strong>组合总和</strong> <a href="https://leetcode.cn/problems/combination-sum/description/">力扣题目链接</a></li><li><strong>全排列Ⅱ</strong> <a href="https://leetcode.cn/problems/permutations-ii/description/">力扣题目链接</a></li><li><strong>组合</strong> <a href="https://leetcode.cn/problems/combinations/description/">力扣题目链接</a></li><li><strong>子集</strong> <a href="https://leetcode.cn/problems/subsets/">力扣题目链接</a></li><li><strong>子集Ⅱ</strong> <a href="https://leetcode.cn/problems/subsets-ii/description/">力扣题目链接</a></li><li><strong>电话号码的字母组合</strong> <a href="https://leetcode.cn/problems/letter-combinations-of-a-phone-number/description/">力扣题目链接</a></li><li><strong>分割回文串</strong> <a href="https://leetcode.cn/problems/palindrome-partitioning/description/">力扣题目链接</a></li><li><strong>复原IP地址</strong> <a href="https://leetcode.cn/problems/restore-ip-addresses/description/">力扣题目链接</a></li><li><strong>非递减子序列</strong> <a href="https://leetcode.cn/problems/non-decreasing-subsequences/description/">力扣题目链接</a></li><li><strong>括号生成</strong> <a href="https://leetcode.cn/problems/generate-parentheses/description/">力扣题目链接</a></li><li><strong>单词搜索</strong> <a href="https://leetcode.cn/problems/word-search/description/">力扣题目链接</a></li></ul><h3 id="高级-困难"><a href="#高级-困难" class="headerlink" title="高级&#x2F;困难"></a><strong>高级&#x2F;困难</strong></h3><ul><li><strong>重新安排行程</strong> <a href="https://leetcode.cn/problems/reconstruct-itinerary/description/">力扣题目链接</a></li><li><strong>N皇后</strong> <a href="https://leetcode.cn/problems/n-queens/description/">力扣题目链接</a></li><li><strong>解数独</strong> <a href="https://leetcode.cn/problems/sudoku-solver/description/">力扣题目链接</a></li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> SevenDays </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 回溯 </tag>
+            
+        </tags>
       
     </entry>
     
