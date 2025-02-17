@@ -4,13 +4,51 @@
   
     
     <entry>
-      <title>数学技巧</title>
-      <link href="/2025/02/16/%E6%95%B0%E5%AD%A6%E6%8A%80%E5%B7%A7/"/>
-      <url>/2025/02/16/%E6%95%B0%E5%AD%A6%E6%8A%80%E5%B7%A7/</url>
+      <title>SpringBoot周</title>
+      <link href="/2025/02/17/SpringBoot%E5%91%A8/"/>
+      <url>/2025/02/17/SpringBoot%E5%91%A8/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>回溯周</title>
+      <link href="/2025/02/17/%E5%9B%9E%E6%BA%AF%E5%91%A8/"/>
+      <url>/2025/02/17/%E5%9B%9E%E6%BA%AF%E5%91%A8/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数学技巧</title>
+      <link href="/2025/02/16/%E6%95%B0%E5%AD%A6%E6%8A%80%E5%B7%A7/"/>
+      <url>/2025/02/16/%E6%95%B0%E5%AD%A6%E6%8A%80%E5%B7%A7/</url>
+      
+        <content type="html"><![CDATA[<h1 id="什么是数学技巧"><a href="#什么是数学技巧" class="headerlink" title="什么是数学技巧"></a><strong>什么是数学技巧</strong></h1><p>运用数学的技巧来解决复杂（有趣）的算法问题。</p><h1 id="Nim游戏"><a href="#Nim游戏" class="headerlink" title="Nim游戏"></a><strong>Nim游戏</strong></h1><p><a href="https://leetcode.cn/problems/nim-game/description/">力扣题目链接</a><br>你和你的朋友，两个人一起玩 Nim 游戏：桌子上有一堆石头。你们轮流进行自己的回合，你作为先手。每一回合，轮到的人拿掉 1 - 3 块石头。拿掉最后一块石头的人就是获胜者。假设你们每一步都是最优解。请编写一个函数，来判断你是否可以在给定石头数量为 n 的情况下赢得游戏。如果可以赢，返回 true；否则，返回 false。</p><ul><li>作为先手，石头数量为 4 的倍数则必输</li></ul><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">canWinNim</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> n % <span class="number">4</span> != <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="石子游戏"><a href="#石子游戏" class="headerlink" title="石子游戏"></a><strong>石子游戏</strong></h1><p><a href="https://leetcode.cn/problems/stone-game/description/">力扣题目链接</a><br>Alice 和 Bob 用几堆石子在做游戏。一共有偶数堆石子，排成一行；每堆都有正整数颗石子，数目为 piles[i]。游戏以谁手中的石子最多来决出胜负。石子的总数是奇数，所以没有平局。Alice 和 Bob 轮流进行，Alice 先开始。每回合，玩家从行的开始或结束处取走整堆石头。这种情况一直持续到没有更多的石子堆为止，此时手中石子最多的玩家获胜。假设 Alice 和 Bob 都发挥出最佳水平，当 Alice 赢得比赛时返回 true，当 Bob 赢得比赛时返回 false。</p><ul><li>先手够聪明则必胜，因为先手可以控制自己拿到所有的索引偶数堆（或奇数堆），只要那一堆（们）和足够大就可以</li></ul><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">stoneGame</span><span class="params">(<span class="type">int</span>[] piles)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="灯泡开关"><a href="#灯泡开关" class="headerlink" title="灯泡开关"></a><strong>灯泡开关</strong></h1><p><a href="https://leetcode.cn/problems/bulb-switcher/">力扣题目链接</a><br>初始时有 n 个灯泡处于关闭状态。第一轮，你将会打开所有灯泡。接下来的第二轮，你将会每两个灯泡关闭第二个。第三轮，你每三个灯泡就切换第三个灯泡的开关（即，打开变关闭，关闭变打开）。第 i 轮，你每 i 个灯泡就切换第 i 个灯泡的开关。直到第 n 轮，你只需要切换最后一个灯泡的开关。找出并返回 n 轮后有多少个亮着的灯泡。</p><ul><li>脑筋急转弯？没有什么意思，不如把时间花费在更有意义的事情上</li></ul><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">bulbSwitch</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> (<span class="type">int</span>) Math.sqrt(n);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
       
     </entry>
     
